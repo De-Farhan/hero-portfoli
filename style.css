@@ -1,0 +1,186 @@
+/*
+========== :: index of css :: ==========
+1. global varable define css
+2. common css
+3. banner section
+4.dream section
+5. experience section
+6. footer section
+============== :: ===== :: =============
+*/
+
+/* ========== global varable define css ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== common css ========== */
+:root {
+  /* text colors */
+  --text-black: #000000;
+  --text-light: #313131;
+  --text-white: #ffffff;
+  --yellow: #ffa500;
+
+  /* bg colors */
+  --bg-btn: linear-gradient(to left, #ff6a4d, #ff9671);
+  --bdr-gradient: linear-gradient(to bottom, #ff6a4d, #ff9671);
+  --bdr-gradient-sec: linear-gradient(to bottom, #0002ff, #00fbff);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-light);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-black);
+  font-weight: 600;
+}
+h1 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 95%;
+  display: block;
+}
+.button {
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 5px;
+  background-image: var(--bg-btn);
+  font-weight: 780;
+  color: var(--text-white);
+}
+section {
+  padding: 5rem 0 0 5rem;
+}
+/* ========== banner section ========== */
+#banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: url("image/top-banner.png") no-repeat;
+}
+#banner .welcome-items {
+  width: 45%;
+}
+#banner .welcome-items .banner-title .title-sub {
+  display: block;
+  margin: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+#banner .welcome-items .banner-title .title-sub span {
+  color: var(--yellow);
+}
+#banner .about-author .author-title {
+  margin-bottom: 2rem;
+}
+#banner .about-author .button {
+  margin-top: 1rem;
+}
+#banner .profile-img {
+  width: 45%;
+}
+/* ========== dream section ========== */
+#dream {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#dream .dream-img {
+  width: 45%;
+}
+#dream .dream-img img {
+  width: 95%;
+}
+#dream .dream-items {
+  width: 50%;
+  padding-right: 2rem;
+  margin-top: 2rem;
+}
+#dream .dream-items .dream-title {
+  margin-bottom: 2rem;
+}
+#dream .dream-items .sub-title {
+  margin-bottom: 2rem;
+}
+#dream .dream-items .button {
+  margin-top: 1.5rem;
+}
+/* ========== experience section ========== */
+#experience {
+  background: url("image/exp-bg.png") no-repeat;
+  background-position-y: 50%;
+  background-size: 9rem;
+}
+#experience .exp-wrapper {
+  display: flex;
+  width: 100%;
+}
+#experience .exp-title {
+  margin-bottom: 2rem;
+}
+#experience .exp-items {
+  width: 45%;
+  box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 5px;
+  border-left: 5px solid;
+  border-image: var(--bg-btn);
+  border-image-slice: 1;
+}
+#experience .exp-items:last-child {
+  border-left: 5px solid;
+  border-image: var(--bdr-gradient-sec);
+  border-image-slice: 1;
+  margin-left: 4rem;
+}
+#experience .exp-items .dev-title {
+  font-size: 2rem;
+}
+#experience .exp-items .dev-level {
+  margin: 1rem 0 0.5rem 0;
+  color: var(--yellow);
+}
+/* ========== footer section ========== */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+footer p {
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 95%;
+  }
+}
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 80%;
+  }
+}
